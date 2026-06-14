@@ -21,10 +21,10 @@
 	on:mouseleave={mouseExit}
 >
 	{#if isImage === false}
-		<!-- <video bind:this={videoElement} autoplay loop muted> -->
-		<video autoplay loop muted>
-			<source {src} type="video/mp4" />
-		</video>
+	  <!-- <video autoplay loop muted> -->
+	  <video bind:this={videoElement} loop muted>
+		<source {src} type="video/mp4" />
+	  </video>
 	{:else}
 		<img alt="" {src} />
 	{/if}
