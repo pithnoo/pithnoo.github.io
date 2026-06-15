@@ -1,0 +1,91 @@
+{
+	"boba": {
+		"title": "Boba Engine",
+
+		"desc": "some yap here",
+
+		"src": "/images/boba.png",
+		"href": "https://youtu.be/oI1acGwBzaY?si=22N86MmTgbIsrrK9",
+		"isImage": true
+	},
+
+	"bpm": {
+		"title": "Boids Predator Model (BPM)",
+
+		"desc": "",
+
+		"src": "/videos/boids.mp4",
+		"href": "",
+		"isImage": false
+	},
+
+	"elevending": {
+		"title": "Elevending",
+
+		"desc": "",
+
+		"src": "/videos/elevending.mp4",
+		"href": "https://pith-dev.itch.io/elevending",
+		"isImage": false
+	},
+
+	"vulkan": {
+		"title": "Vulkan Renderer",
+
+		"desc": "",
+
+		"src": "/videos/vulkan.mp4",
+		"href": "",
+		"isImage": false
+	},
+
+	"raytracer": {
+		"title": "Raytracer",
+
+		"desc": "",
+
+		"src": "/images/raytracer.png",
+		"href": "",
+		"isImage": true 
+	},
+
+	"animation": {
+		"title": "Animation / Physics Simulation",
+
+		"desc": "",
+
+		"src": "/videos/animation.mp4",
+		"href": "",
+		"isImage": false
+	},
+
+	"soul": {
+		"title": "Soul",
+
+		"desc": "",
+
+		"src": "/videos/soul.mp4",
+		"href": "https://pith-dev.itch.io/soul",
+		"isImage": false
+	},
+
+	"lift": {
+		"title": "Lift",
+
+		"desc": "",
+
+		"src": "/videos/lift.mp4",
+		"href": "https://pith-dev.itch.io/lift",
+		"isImage": false
+	},
+
+	"pilot": {
+		"title": "Pilot",
+
+		"desc": "",
+
+		"src": "videos/pilot.mp4",
+		"href": "https://pith-dev.itch.io/pilot",
+		"isImage": false
+	}
+}

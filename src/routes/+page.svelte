@@ -4,11 +4,15 @@
 	import Boid from "../components/Boid.svelte";
 	import Skill from "../components/Skill.svelte";
 	import Navbar from "../components/Navbar.svelte";
+
+ import ProjectData from '../projects.json';
+
+ // convert json data to key value pairs
+ const projects = Object.entries(ProjectData);
+
 </script>
 
 <Navbar />
-
-<!-- <Boid /> -->
 
 <div class="flex-column justify-center items-center pt-30">
 	<h1
@@ -57,23 +61,48 @@
 	<div
 		class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-x-10 gap-y-30"
 	>
-		<Project title="Boba Engine" src="/images/boba.png" isImage="true" />
-		<Project title="Boids Predator Model (BPM)" src="/videos/boids.mp4" />
-		<Project title="Elevending" src="/videos/elevending.mp4" />
-		<Project
-			title="Vulkan Renderer"
-			src="/videos/vulkan.mp4"
-			desc="jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"
-		/>
-		<Project title="Raytracer" src="/images/raytracer.png" isImage="true" />
-		<Project
-			title="Animation / Physics Simulation"
-			src="/videos/animation.mp4"
-		/>
-		<Project title="Soul" src="/videos/soul.mp4" />
-		<Project title="Lift" src="/videos/lift.mp4" />
-		<Project title="Pilot" src="/videos/pilot.mp4" />
+	  {#each projects as [_, project]}
+		{#if project.href}
+		<Project title={project.title} desc={project.desc} src={project.src} href={project.href} isImage={project.isImage} />
+		{:else}
+		<Project title={project.title} desc={project.desc} src={project.src} isImage={project.isImage} />
+		{/if}
+	  {/each}
+
+	  <!-- <Project title="Boba Engine" src="/images/boba.png" isImage="true" />
+		   <Project title="Boids Predator Model (BPM)" src="/videos/boids.mp4" />
+		   <Project title="Elevending" src="/videos/elevending.mp4" />
+		   <Project
+		   title="Vulkan Renderer"
+		   src="/videos/vulkan.mp4"
+		   desc="jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"
+		   />
+		   <Project title="Raytracer" src="/images/raytracer.png" isImage="true" />
+		   <Project
+		   title="Animation / Physics Simulation"
+		   src="/videos/animation.mp4"
+		   />
+		   <Project title="Soul" src="/videos/soul.mp4" />
+		   <Project title="Lift" src="/videos/lift.mp4" />
+		   <Project title="Pilot" src="/videos/pilot.mp4" /> -->
 	</div>
+</div>
+
+<div
+	class="max-w bg-[#282828] shadow-lg flex items-center justify-center py-5"
+>
+	<a
+		href=""
+		class="text-[#bdae93] hover:text-[#fabd21] relative group inline-block"
+	>
+		Back to top
+		<span
+			class="bg-[#fabd21] absolute -bottom-1 left-1/2 h-[2px] w-0 group-hover:w-1/2 transition-all duration-500"
+		></span>
+		<span
+			class="bg-[#fabd21] absolute -bottom-1 right-1/2 h-[2px] w-0 group-hover:w-1/2 transition-all duration-500"
+		></span>
+	</a>
 </div>
 
 <!-- <div class="flex-column justify-center items-center pb-10">
