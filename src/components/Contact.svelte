@@ -37,8 +37,8 @@
 		<p class="text-xl md:text-2xl lg:text-2xl text-[#bdae93]">CV:</p>
 		<a
 			class="pl-2 text-xl md:text-2xl lg:text-2xl text-[#bdae93] hover:text-[#fabd21] duration-150 ease-in-out group"
-			href="mailto:ollyc88@gmail.com?"
-		>
+			href="/Oliver_Cheung_CV.pdf"
+		download>
 		  Download here
 			<div
 				class="bg-[#fabd21] h-[2px] w-0 group-hover:w-full transition-all duration-500"
