@@ -4,12 +4,10 @@
 	import Boid from "../components/Boid.svelte";
 	import Skill from "../components/Skill.svelte";
 	import Navbar from "../components/Navbar.svelte";
+	import ProjectData from "../projects.json";
 
- import ProjectData from '../projects.json';
-
- // convert json data to key value pairs
- const projects = Object.entries(ProjectData);
-
+	// convert json data to key value pairs
+	const projects = Object.entries(ProjectData);
 </script>
 
 <Navbar />
@@ -38,11 +36,7 @@
 			<p
 				class="text-[#fbf1c7] mx-5 text-sm lg:text-xl md:text-lg sm:text-sm text-center sm:text-center md:text-left lg:text-left pt-5"
 			>
-				Lorem ipsum dolor sit amet consectetur adipiscing elit.
-				Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex
-				sapien vitae pellentesque sem placerat in id. Placerat in id
-				cursus mi pretium tellus duis. Pretium tellus duis convallis
-				tempus leo eu aenean.
+			  I'm <strong>Oliver Cheung</strong>, a Postgraduate High-Performance Graphics student situated in London, UK. Combining game engine tools with real-time rendering to build stylised games.
 			</p>
 		</div>
 	</div>
@@ -61,36 +55,29 @@
 	<div
 		class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-x-10 gap-y-30"
 	>
-	  {#each projects as [_, project]}
-		{#if project.href}
-		<Project title={project.title} desc={project.desc} src={project.src} href={project.href} isImage={project.isImage} />
-		{:else}
-		<Project title={project.title} desc={project.desc} src={project.src} isImage={project.isImage} />
-		{/if}
-	  {/each}
-
-	  <!-- <Project title="Boba Engine" src="/images/boba.png" isImage="true" />
-		   <Project title="Boids Predator Model (BPM)" src="/videos/boids.mp4" />
-		   <Project title="Elevending" src="/videos/elevending.mp4" />
-		   <Project
-		   title="Vulkan Renderer"
-		   src="/videos/vulkan.mp4"
-		   desc="jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"
-		   />
-		   <Project title="Raytracer" src="/images/raytracer.png" isImage="true" />
-		   <Project
-		   title="Animation / Physics Simulation"
-		   src="/videos/animation.mp4"
-		   />
-		   <Project title="Soul" src="/videos/soul.mp4" />
-		   <Project title="Lift" src="/videos/lift.mp4" />
-		   <Project title="Pilot" src="/videos/pilot.mp4" /> -->
+		{#each projects as [_, project]}
+			{#if project.href}
+				<Project
+					title={project.title}
+					desc={project.desc}
+				  tags={project.tags}
+					src={project.src}
+					href={project.href}
+					isImage={project.isImage}
+				/>
+			{:else}
+				<Project
+					title={project.title}
+					desc={project.desc}
+					src={project.src}
+					isImage={project.isImage}
+				/>
+			{/if}
+		{/each}
 	</div>
 </div>
 
-<div
-	class="max-w bg-[#282828] shadow-lg flex items-center justify-center py-5"
->
+<div class="max-w bg-[#282828] shadow-lg flex items-center justify-center py-5">
 	<a
 		href=""
 		class="text-[#bdae93] hover:text-[#fabd21] relative group inline-block"

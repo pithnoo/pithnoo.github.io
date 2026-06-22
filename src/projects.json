@@ -2,8 +2,9 @@
 	"boba": {
 		"title": "Boba Engine",
 
-		"desc": "some yap here",
+	  "desc": "My group submission for the Games Republic 2026, a Vulkan based game engine created from scratch to streamline development of local co-op games. The engine combines MSAA, Toon Shading, Shadow Mapping and Ambient Occlusion for a stylised non-photorealistic finish. I served as the Project Manager, primarily focusing on mesh parsing to be integrated into our engine's ECS system. Subsequently, I also worked on the Engine's animation system, supporting vertex skinning, skeletal animation and animation cycles.",
 
+	  "tags": "C++, Vulkan, GDB, Renderdoc, Assimp, Blender",
 		"src": "/images/boba.png",
 		"href": "https://youtu.be/oI1acGwBzaY?si=22N86MmTgbIsrrK9",
 		"isImage": true
@@ -12,8 +13,9 @@
 	"bpm": {
 		"title": "Boids Predator Model (BPM)",
 
-		"desc": "",
+	  "desc": "My penultimate year dissertation reapplying the Boid's Algorithm, proposed by Craig Reynolds. Developed in OpenGL, it acts as a simulation of bird murmurations, a defensive maneuver to avoid an incoming predator. The simulation utlises the DBSCAN clustering algorithm to organise birds into allocated clusters. The predator can then read this data to gauge the largest flock, and the average cluster centroid to determine its dive target. ",
 
+	  "tags": "",
 		"src": "/videos/boids.mp4",
 		"href": "",
 		"isImage": false
@@ -22,8 +24,9 @@
 	"elevending": {
 		"title": "Elevending",
 
-		"desc": "",
+	  "desc": "A tower defense game developed in the Godot game engine, attempting to repurpose Pokemon's type based matchups. The player is able to also take manual control of two allocated defensive vending machines, demanding fast reactions and subconcious memorisation of the enemies' types. This project was a great opportunity for me to work together with team mates from other disciplines, and allowed me to further develop my skills in programming, music and art.",
 
+	  "tags": "",
 		"src": "/videos/elevending.mp4",
 		"href": "https://pith-dev.itch.io/elevending",
 		"isImage": false
@@ -32,18 +35,20 @@
 	"vulkan": {
 		"title": "Vulkan Renderer",
 
-		"desc": "",
+	  "desc": "A PBR Renderer built from scratch in Vulkan, providing a real-time view of the Unreal Sun Temple scene. It includes a individual debug pipeline to visualise texture mipmap levels, fragment depth, and visual indicators for overdraw and overshading. The renderer also include's a built-in mosaic effect to showcase its post-processing capabilities.",
 
+	  "tags": "",
 		"src": "/videos/vulkan.mp4",
 		"href": "",
 		"isImage": false
 	},
 
 	"raytracer": {
-		"title": "Raytracer",
+		"title": "OpenGL Raytracer",
 
-		"desc": "",
+	  "desc": "A CPU-Based raytracer implemented in OpenGL, which incorporates Monte Carlo path tracing to calculate indirect light. The raytracer utilises Snell's and Beer's Law to calculate transparency, and the Fresnel Effect for reflections. Next Event Estimation is also included to calculate indirect light, applying caustics to the final render.",
 
+	  "tags": "",
 		"src": "/images/raytracer.png",
 		"href": "",
 		"isImage": true 
@@ -52,8 +57,9 @@
 	"animation": {
 		"title": "Animation / Physics Simulation",
 
-		"desc": "",
+	  "desc": "A real-time rigid body simulation developed in OpenGL, including collsion testing for spheres and dodecahedra. The terrain's surface normals are used to calculate rotational and linear impulse. The simulation also utilises the BVH format to apply bipedal locomotion, including linear interpolation for smooth animation cycles and transitions.",
 
+	  "tags": "",
 		"src": "/videos/animation.mp4",
 		"href": "",
 		"isImage": false
@@ -62,8 +68,9 @@
 	"soul": {
 		"title": "Soul",
 
-		"desc": "",
+	  "desc": "My first team project, developed for the Mark Evison Foundation. Soul was another application of Celeste's dash mechanic, combined with the free-roaming movement shown in Undertale. The most notable addition was the game's boss battle, integrating mechanics from the video games that I was inspired by.",
 
+	  "tags": "",
 		"src": "/videos/soul.mp4",
 		"href": "https://pith-dev.itch.io/soul",
 		"isImage": false
@@ -72,8 +79,9 @@
 	"lift": {
 		"title": "Lift",
 
-		"desc": "",
+	  "desc": "As I got a better grasp of game design, I decided to develop Lift, a reapplication of Celeste's dash mechanic into a top down shooter. This was developed as the artefact for my Extended Project Qualification, and was combined with a report investigating crunch culture in the game industry. My intention was to convey firsthand the experience of a developer creating and managing their own game, and its applications on a larger scale.",
 
+	  "tags": "",
 		"src": "/videos/lift.mp4",
 		"href": "https://pith-dev.itch.io/lift",
 		"isImage": false
@@ -82,8 +90,9 @@
 	"pilot": {
 		"title": "Pilot",
 
-		"desc": "",
+	  "desc": "The first programming project that introduced me to the world of game development, a 2D platformer created in Unity.",
 
+	  "tags": "",
 		"src": "videos/pilot.mp4",
 		"href": "https://pith-dev.itch.io/pilot",
 		"isImage": false
