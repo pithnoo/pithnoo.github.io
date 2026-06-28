@@ -36,7 +36,10 @@
 			<p
 				class="text-[#fbf1c7] mx-5 text-sm lg:text-xl md:text-lg sm:text-sm text-center sm:text-center md:text-left lg:text-left pt-5"
 			>
-			  I'm <strong>Oliver Cheung</strong>, a Postgraduate High-Performance Graphics student situated in London, UK. Combining game engine tools with real-time rendering to build stylised games.
+				I'm <strong>Oliver Cheung</strong>, a
+				High-Performance Graphics graduate situated in London, UK.
+				Combining game engine tools with real-time rendering to build
+				stylised games.
 			</p>
 		</div>
 	</div>
@@ -60,7 +63,7 @@
 				<Project
 					title={project.title}
 					desc={project.desc}
-				  tags={project.tags}
+					tags={project.tags}
 					src={project.src}
 					href={project.href}
 					isImage={project.isImage}
@@ -69,6 +72,7 @@
 				<Project
 					title={project.title}
 					desc={project.desc}
+					tags={project.tags}
 					src={project.src}
 					isImage={project.isImage}
 				/>

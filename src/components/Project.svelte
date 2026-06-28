@@ -3,7 +3,7 @@
 		title = "Title here",
 		desc = "Desc here",
 		src = "",
-	  tags = "",
+		tags = "",
 		href = "#contacts",
 		isImage = false,
 	} = $props();
@@ -20,7 +20,7 @@
 
 <a
 	{href}
-	class="group relative min-w-0 mx-8 w-50 h-180 lg:w-85 lg:h-190 md:w-70 md:h-190 hover:scale-110 duration-150 ease-in-out bg-[#282828] shadow-lg"
+	class="group relative min-w-0 mx-8 w-50 h-auto lg:w-90 md:w-70 hover:scale-110 duration-150 ease-in-out bg-[#282828] shadow-lg flex flex-col"
 	onmouseenter={mouseEnter}
 	onmouseleave={mouseExit}
 >
@@ -33,9 +33,9 @@
 		<img alt="" {src} />
 	{/if}
 
-	<div class="w-full h-14 flex justify-center items-center bg-[#3c3836]">
-		<p class="m-4 text-[#ebdbb2] text-sm sm:text-xxs">
-		  {tags}
+	<div class="w-full h-14 flex justify-start items-center bg-[#3c3836]">
+		<p class="m-4 text-[#ebdbb2] text-xs sm:text-xs md:text-sm lg:text-sm">
+			{tags}
 		</p>
 	</div>
 
@@ -53,14 +53,20 @@
 				{title}
 			</h1>
 		{/if}
-		<p class="text-[#fbf1c7] pt-4 text-s md:text-md lg:text-md">{desc}</p>
+
+		<p class="text-[#fbf1c7] pt-4 text-sm md:text-base lg:text-base">
+		  {desc}
+		</p>
+
 	</article>
 
 	{#if href === "#contacts"}
 		<div
-			class="w-full h-10 absolute bottom-0 flex justify-center items-center bg-[#3c3836]"
+			class="w-full h-15 mt-auto flex justify-center items-center bg-[#3c3836]"
 		>
-			<p class="my-4 text-[#ebdbb2] text-xs sm:text-xxs">
+			<p
+				class="m-4 text-[#ebdbb2] text-xs sm:text-xs md:text-sm lg:text-sm"
+			>
 				Source code available on request
 			</p>
 		</div>
