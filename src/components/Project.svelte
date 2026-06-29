@@ -20,7 +20,7 @@
 
 <a
 	{href}
-	class="group relative min-w-0 mx-8 w-50 h-auto lg:w-90 md:w-70 hover:scale-110 duration-150 ease-in-out bg-[#282828] shadow-lg flex flex-col"
+	class="group relative min-w-0 mx-8 w-auto h-auto lg:w-90 md:w-70 hover:scale-110 duration-150 ease-in-out bg-[#282828] shadow-lg flex flex-col"
 	onmouseenter={mouseEnter}
 	onmouseleave={mouseExit}
 >
